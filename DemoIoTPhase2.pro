@@ -61,3 +61,12 @@ FORMS    += mainwindow.ui \
 
 RESOURCES += \
     rsc.qrc
+# Location of SMTP Library
+SMTP_LIBRARY_LOCATION = D:\Tam\QT\Workspace\build-DemoIoTPhase2-Desktop_Qt_5_7_0_MinGW_32bit-Debug
+
+win32:CONFIG(release, debug|release): LIBS += -L$$SMTP_LIBRARY_LOCATION/release/ -lSMTPEmail
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$SMTP_LIBRARY_LOCATION/debug/ -lSMTPEmail
+else:unix: LIBS += -L$$SMTP_LIBRARY_LOCATION -lSMTPEmail
+
+INCLUDEPATH += $$SMTP_LIBRARY_LOCATION
+DEPENDPATH += $$SMTP_LIBRARY_LOCATION

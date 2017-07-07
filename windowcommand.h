@@ -32,7 +32,7 @@
 #define UHV4_CHANNEL_SELECT_COMMAND             505
 
 /* PUMP COMMANDS */
-#define UHV4_SET_PRESSURE_UNIT_COMMAND          600
+#define UHV4_SET_PRESSURE_UNIT_COMMAND  600
 #define UHV4_SET_OPERATINGMODE                  601
 #define UHV4_PROTECT_COMMAND                    602
 #define UHV4_FIXED_STEP_COMMAND                 603
